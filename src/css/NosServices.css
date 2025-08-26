@@ -1,0 +1,218 @@
+/* src/css/NosServices.css */
+
+.services-page {
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- Section Hero --- */
+.services-header {
+  position: relative;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+.header-overlay {
+  background-color: rgba(33, 53, 71, 0.7); /* Votre couleur foncée avec transparence */
+  padding: 2rem;
+  border-radius: 8px;
+}
+.services-header h1 {
+  font-size: 2.8rem;
+  margin: 0 0 0.5rem;
+}
+.services-header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* --- Liste des Services --- */
+.services-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.service-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.service-item:last-child {
+  margin-bottom: 0;
+}
+/* Alternance du layout */
+.service-item:nth-child(even) .service-image-container {
+  order: 2;
+}
+.service-image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-text-container h3 {
+  font-size: 2rem;
+  color: #213547;
+  margin: 0 0 1rem;
+}
+.service-text-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.service-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.service-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.service-benefits li i {
+  color: #1e90ff; /* Votre couleur d'accent */
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
+
+/* --- Section Call To Action --- */
+.cta-section {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.cta-section h2 {
+  font-size: 2.2rem;
+  color: #213547;
+  margin: 0 0 1rem;
+}
+.cta-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 0 0 2rem;
+}
+/* Réutilisation du style de bouton de votre page d'accueil */
+.cta-section .contact-btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+/* ============================================= */
+/* --- RESPONSIVE : NOS SERVICES --- */
+/* ============================================= */
+
+/* --- Tablettes (max-width: 992px) --- */
+@media (max-width: 992px) {
+  /* --- Section Hero --- */
+  .services-header {
+    height: 40vh; /* Réduit la hauteur du hero */
+  }
+  .services-header h1 {
+    font-size: 2.2rem;
+  }
+  .services-header p {
+    font-size: 1.1rem;
+  }
+  .header-overlay {
+    padding: 2rem 1.5rem; /* Empêche le texte de toucher les bords */
+  }
+
+  /* --- Liste des Services --- */
+  .services-list {
+    padding: 4rem 2rem;
+  }
+  /* C'EST LA CORRECTION PRINCIPALE : on passe la grille à une seule colonne */
+  .service-item,
+  .service-item:nth-child(even) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  /* On annule l'alternance pour que l'image soit toujours en haut */
+  .service-item:nth-child(even) .service-image-container {
+    order: 0;
+  }
+  .service-image-container img {
+    height: 300px; /* Réduit la hauteur des images */
+  }
+  .service-text-container h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* --- Mobiles (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .services-header{
+    margin-top: 20px;
+  }
+
+  .services-list {
+    padding: 3rem 1rem;
+  }
+  .cta-section {
+    padding: 3rem 1rem;
+  }
+
+  /* --- Section Hero --- */
+  .services-header {
+    height: 35vh;
+  }
+  .header-overlay {
+    padding: 1.5rem;
+  }
+  .services-header h1 {
+    font-size: 1.8rem;
+  }
+  .services-header p {
+    font-size: 1rem;
+  }
+
+  /* --- Liste des Services --- */
+  .service-text-container h3 {
+    font-size: 1.6rem;
+  }
+  .service-text-container p {
+    font-size: 0.95rem;
+  }
+  .service-benefits li {
+    font-size: 0.9rem;
+  }
+  
+  /* --- Section CTA --- */
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+  .cta-section p {
+    font-size: 1rem;
+  }
+}
+
+/* --- Petits Mobiles (max-width: 360px) --- */
+@media (max-width: 360px) {
+  .services-header h1 {
+    font-size: 1.6rem;
+  }
+  .services-header p {
+    font-size: 0.9rem;
+  }
+  .service-text-container h3 {
+    font-size: 1.4rem;
+  }
+}

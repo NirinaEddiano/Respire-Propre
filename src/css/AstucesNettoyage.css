@@ -1,0 +1,177 @@
+/* src/css/AstucesNettoyage.css */
+
+/* --- Styles de la page --- */
+.astuces-page { max-width: 1200px; margin: 0 auto; padding: 120px 2rem 5rem; font-family: 'Inter', sans-serif; }
+.astuces-header { text-align: center; margin-bottom: 4rem; }
+.astuces-header h1 { font-size: 2.5rem; color: #213547; margin-bottom: 0.5rem; }
+.astuces-header p { font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto; }
+.articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.article-card { background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07); overflow: hidden; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.article-card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); }
+.card-image { height: 200px; overflow: hidden; }
+.card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.article-card:hover .card-image img { transform: scale(1.05); }
+.card-content { padding: 1.5rem; }
+.card-content h3 { font-size: 1.25rem; color: #213547; margin: 0 0 0.75rem 0; }
+.card-content p { font-size: 0.9rem; color: #555; line-height: 1.6; margin: 0 0 1.5rem 0; }
+.card-button { font-weight: 600; color: #1e90ff; display: inline-flex; align-items: center; gap: 0.5rem; transition: gap 0.3s ease; }
+.article-card:hover .card-button { gap: 0.8rem; }
+
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+.modal-backdrop {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(33, 53, 71, 0.8); backdrop-filter: blur(8px); z-index: 2000; animation: fadeIn 0.3s ease; padding: 2rem 0; overflow-y: auto;
+}
+.modal-content {
+  position: relative; background-color: #ffffff; border-radius: 10px; width: 95%; max-width: 900px; margin: 0 auto; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); animation: slideInUp 0.4s ease; max-height: calc(100vh - 4rem); overflow-y: auto;overflow-x: hidden;
+}
+.modal-close-btn {
+  position: sticky; top: 1rem; right: 1rem; float: right; background: #e9ecef; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 1.2rem; color: #555; cursor: pointer; transition: all 0.3s ease; z-index: 10;
+}
+.modal-close-btn:hover { color: #1e90ff; transform: rotate(90deg); background-color: #dbeafe; }
+
+.modal-header { text-align: center; padding: 4rem 2rem 2rem; border-bottom: 1px solid #e9ecef; }
+.modal-header h1 { font-size: 2.5rem; color: #213547; margin: 0 0 1rem; }
+.modal-intro { font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto; }
+
+.modal-body { padding: 2rem 2.5rem; }
+
+.modal-toc { background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem; }
+.modal-toc h4 { margin: 0 0 1rem; font-size: 1.1rem; color: #213547; }
+.modal-toc ul { list-style: none; padding: 0; margin: 0; }
+.modal-toc li { color: #1e90ff; cursor: pointer; padding: 0.5rem 0; transition: color 0.3s ease; display: flex; align-items: center; gap: 0.5rem; }
+.modal-toc li:hover { color: #19528c; }
+.modal-toc li i { transition: transform 0.3s ease; }
+.modal-toc li:hover i { transform: translateX(4px); }
+
+.modal-section { margin-bottom: 3rem; scroll-margin-top: 20px; }
+.modal-section h2 { font-size: 1.8rem; color: #213547; padding-bottom: 0.5rem; border-bottom: 2px solid #1e90ff; margin: 0 0 1.5rem 0; }
+.modal-section p, .modal-section li { font-size: 1.1rem; line-height: 1.9; color: #333; }
+.modal-section ul, .modal-section ol { padding-left: 2rem; margin-bottom: 1rem; }
+.modal-section strong { color: #213547; }
+.example-box { background-color: #e8f4ff; border-left: 4px solid #1e90ff; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 4px; }
+.example-box strong { color: #19528c; }
+
+.modal-carousel-container { position: relative; }
+.modal-carousel-slider { display: flex; transition: transform 0.5s ease-in-out; }
+.carousel-slide { flex: 0 0 100%; display: flex; gap: 1rem; }
+.img-comparison { flex: 1; text-align: center; }
+.img-comparison img { width: 100%; height: 350px; object-fit: cover; border-radius: 8px; margin-bottom: 0.5rem; }
+.img-comparison span { font-weight: 600; color: #555; }
+.carousel-nav { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.9); border: 1px solid #e0e0e0; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #333; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; z-index: 5; }
+.carousel-nav:hover { background-color: #1e90ff; color: #ffffff; }
+.carousel-nav.prev { left: -22px; }
+.carousel-nav.next { right: -22px; }
+
+
+/* ============================================= */
+/* --- RESPONSIVE : PAGE ASTUCES --- */
+/* ============================================= */
+
+/* --- Tablettes (max-width: 992px) --- */
+@media (max-width: 992px) {
+  .articles-grid {
+    /* Passe de 4 à 2 colonnes sur tablette */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* Ajustements pour le Modal (page flottante) */
+  .modal-header h1 {
+    font-size: 2rem;
+  }
+  .modal-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --- Mobiles (max-width: 768px) --- */
+@media (max-width: 768px) {
+  .astuces-page {
+    padding: 90px 1rem 3rem; /* Espacements réduits */
+  }
+  .astuces-header h1 {
+    font-size: 2rem;
+  }
+  .astuces-header p {
+    font-size: 1rem;
+  }
+
+  /* --- Grille des cartes --- */
+  .articles-grid {
+    gap: 1.5rem;
+  }
+  .card-content h3 {
+    font-size: 1.1rem;
+  }
+
+  /* --- Modal sur mobile --- */
+  .modal-backdrop {
+    padding: 0; /* Le modal prend tout l'écran */
+  }
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+    animation: none; /* Retire l'animation de slide pour une sensation plus native */
+  }
+  .modal-close-btn {
+    top: 0.8rem;
+    right: 0.8rem;
+  }
+  .modal-header {
+    padding: 3rem 1.5rem 1.5rem;
+  }
+  .modal-header h1 {
+    font-size: 1.8rem;
+  }
+  .modal-intro {
+    font-size: 1rem;
+  }
+  .modal-body {
+    padding: 1.5rem;
+  }
+  .modal-toc {
+    padding: 1rem;
+  }
+  .modal-section h2 {
+    font-size: 1.4rem;
+  }
+  .modal-section p, .modal-section li {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* --- Carrousel dans le Modal --- */
+  .carousel-slide {
+    flex-direction: column; /* Passe les images l'une au-dessus de l'autre */
+  }
+  .img-comparison img {
+    height: 280px; /* Hauteur des images réduite */
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .img-comparison img {
+    height: 400px; 
+  }
+}
+
+/* --- Petits Mobiles (max-width: 360px) --- */
+@media (max-width: 480px) {
+  .astuces-header h1 {
+    font-size: 1.8rem;
+  }
+  .modal-header h1 {
+    font-size: 1.6rem;
+  }
+  .modal-section h2 {
+    font-size: 1.3rem;
+  }
+  .img-comparison img {
+    padding-left: 30px;
+  }
+}

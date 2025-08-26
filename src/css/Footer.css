@@ -1,0 +1,135 @@
+/* src/css/Footer.css */
+
+.site-footer {
+  background-color: #213547; /* Votre couleur foncée principale */
+  color: #a9b3c1; /* Une couleur de texte douce et lisible */
+  padding: 4rem 2rem 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+/* Styles généraux pour les titres des colonnes */
+.footer-links h4,
+.footer-contact h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+/* Ligne décorative sous les titres */
+.footer-links h4::after,
+.footer-contact h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #1e90ff; /* Votre couleur d'accent */
+}
+
+/* Partie 1: À propos */
+.footer-about .footer-logo {
+  max-width: 160px;
+  margin-bottom: 1rem;
+}
+
+.footer-description {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #1e90ff;
+  transform: translateY(-3px);
+}
+
+/* Partie 2 & 3: Listes de liens et contact */
+.footer-links ul,
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li,
+.footer-contact ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links ul li a,
+.footer-contact ul li a {
+  color: #a9b3c1;
+  text-decoration: none;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.footer-contact ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-contact ul li i {
+  color: #1e90ff;
+  margin-right: 1rem;
+  margin-top: 5px;
+  font-size: 1.1rem;
+  width: 20px; /* Aligne le texte verticalement */
+  text-align: center;
+}
+
+/* Barre du bas avec le copyright */
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+
+@media (max-width: 768px) {
+    .footer-about{
+      place-items: center;
+    }
+
+}
