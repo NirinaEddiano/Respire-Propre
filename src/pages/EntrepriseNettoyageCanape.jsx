@@ -241,7 +241,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé 2 places</h3>
             <div className="price">
-              <span>60</span>€
+              <span>125</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -254,7 +254,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé 3 places</h3>
             <div className="price">
-              <span>70</span>€
+              <span>150</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -268,7 +268,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé d'angle</h3>
             <div className="price">
-              <span>80</span>€
+              <span>100</span>$
             </div>
             <Link to="/contact" className="btn btn-primary">
               Prendre rendez-vous
@@ -281,7 +281,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé en U</h3>
             <div className="price">
-              <span>90</span>€
+              <span>125</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -294,7 +294,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Fauteuil</h3>
             <div className="price">
-              <span>40</span>€
+              <span>60</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -307,7 +307,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Nettoyage de tapis</h3>
             <div className="price">
-              <span>50</span>€
+              <span>60</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -320,7 +320,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Nettoyage de matelas</h3>
             <div className="price">
-              <span>70</span>€
+              <span>125</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
