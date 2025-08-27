@@ -45,37 +45,37 @@ function EntrepriseNettoyageCanape() {
   const testimonials = [
     {
       name: 'Marie Dubois',
-      location: 'Annecy',
+      location: 'Québec',
       rating: 5,
       text: "Service impeccable ! Mon vieux canapé en tissu a retrouvé sa jeunesse. L'équipe était ponctuelle, professionnelle et très efficace. Je recommande sans hésiter."
     },
     {
       name: 'Julien Lefebvre',
-      location: 'Lyon',
+      location: 'Québec',
       rating: 5,
       text: "J'étais sceptique quant au nettoyage de mon canapé d'angle, mais le résultat est bluffant. Plus aucune tache et une odeur de frais très agréable. Excellent rapport qualité-prix."
     },
     {
       name: 'Chloé Garcia',
-      location: 'Paris',
+      location: 'Québec',
       rating: 5,
       text: "Un grand merci à Respire Propre pour leur intervention rapide. Mon fauteuil en cuir était terne et avait quelques taches. Il est maintenant comme neuf. Un vrai travail d'expert."
     },
     {
       name: 'Lucas Martin',
-      location: 'Marseille',
+      location: 'Québec',
       rating: 4,
       text: "Très satisfait du nettoyage de mon matelas. Le technicien a bien expliqué le processus. Seul petit bémol, un léger retard, mais la qualité du service a tout rattrapé."
     },
     {
       name: 'Emma Rousseau',
-      location: 'Toulouse',
+      location: 'Québec',
       rating: 5,
       text: "Le tapis de mon salon avait subi les assauts de mes enfants... Respire Propre l'a transformé ! Les couleurs sont ravivées et il est tout doux. Service client au top."
     },
     {
       name: 'Adrien Bernard',
-      location: 'Dijon',
+      location: 'Québec',
       rating: 5,
       text: "Professionnalisme et efficacité sont les maîtres mots. Mon canapé en U est immense et ils l'ont nettoyé en un temps record. Je referai appel à eux, c'est certain."
     }
@@ -92,7 +92,7 @@ function EntrepriseNettoyageCanape() {
   const faqData = [
     {
       question: "Dans quelles zones intervenez-vous ?",
-      answer: "Nous intervenons dans plusieurs grandes villes et leurs alentours en France, notamment à Annecy, Lyon, Paris, Montpellier, Dijon, Toulouse, Nice, Marseille, Nantes et Perpignan. N'hésitez pas à nous contacter pour vérifier si votre localité est desservie."
+      answer: "Nous intervenons à Québec. N'hésitez pas à nous contacter pour vérifier si votre localité est desservie."
     },
     {
       question: "Quels types de services de nettoyage proposez-vous ?",
@@ -132,7 +132,7 @@ function EntrepriseNettoyageCanape() {
         </div>
         <div className="hero-content">
           <p>
-          Pour les particuliers et les professionnels, Respire Propre redonne vie à vos textiles d'ameublement. Confiez-nous votre canapé, fauteuil ou sofa pour un nettoyage biologique qui purifie les fibres en profondeur. En tant qu'experts du nettoyage à domicile en France, nous assainissons vos meubles pour un intérieur où il fait bon respirer.
+          Pour les particuliers et les professionnels, Respire Propre redonne vie à vos textiles d'ameublement. Confiez-nous votre canapé, fauteuil ou sofa pour un nettoyage biologique qui purifie les fibres en profondeur. En tant qu'experts du nettoyage à domicile en Québec, nous assainissons vos meubles pour un intérieur où il fait bon respirer.
           </p>
           <div className="rating-section">
             <div className="google-stars">
