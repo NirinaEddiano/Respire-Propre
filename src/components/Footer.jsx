@@ -18,11 +18,6 @@ function Footer() {
           <p className="footer-description">
             Respire Propre redonne vie à vos textiles d'ameublement grâce à un nettoyage biologique qui purifie les fibres en profondeur, pour un intérieur où il fait bon respirer.
           </p>
-          <div className="social-icons">
-            <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-          </div>
         </div>
 
         {/* Partie 2: Navigation Rapide */}
