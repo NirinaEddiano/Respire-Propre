@@ -25,7 +25,7 @@ function Footer() {
           <h4>Navigation Rapide</h4>
           <ul>
             <li><Link to="/">Accueil</Link></li>
-            <li><Link to="/#expert-section">Nos Services</Link></li> {/* Exemple de lien vers une ancre */}
+            <li><Link to="/nos-services">Nos Services</Link></li> {/* Exemple de lien vers une ancre */}
             <li><Link to="/#pricing-section">Tarifs</Link></li> {/* Exemple de lien vers une ancre */}
             <li><Link to="/astuces-nettoyage-canape">Astuces Nettoyage</Link></li>
             <li><Link to="/contact">Contact</Link></li>
