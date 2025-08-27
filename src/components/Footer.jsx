@@ -47,11 +47,11 @@ function Footer() {
             </li>
             <li>
               <i className="fas fa-phone"></i>
-              <a href="tel:+33611085483">06 11 08 54 83</a>
+              <a href="tel:+15815806439">581-580-6439</a>
             </li>
             <li>
               <i className="fas fa-envelope"></i>
-              <a href="mailto:contact@respirepropre.fr">contact@respirepropre.fr</a>
+              <a href="mailto:Plussaisons@gmail.com">Plussaisons@gmail.com</a>
             </li>
           </ul>
         </div>
