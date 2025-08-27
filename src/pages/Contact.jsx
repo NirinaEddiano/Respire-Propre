@@ -26,7 +26,7 @@ function Contact() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/api/send-email', formData);
+      const response = await axios.post('https://respire-back.onrender.com', formData);
       toast.success(response.data.message || 'Votre message a été envoyé avec succès !');
       setFormData({
         firstName: '', lastName: '', email: '', phone: '', address: '', message: '',
@@ -56,15 +56,15 @@ function Contact() {
               </p>
               <div className="info-item">
                 <i className="fas fa-phone"></i>
-                <a href="tel:+33611085483">06 11 08 54 83</a>
+                <a href="tel:+15815806439">581-580-6439</a>
               </div>
               <div className="info-item">
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:contact@respirepropre.fr">contact@respirepropre.fr</a>
+                <a href="mailto:Plussaisons@gmail.com">Plussaisons@gmail.com</a>
               </div>
               <div className="info-item">
                 <i className="fas fa-clock"></i>
-                <span>Lundi - Samedi : 9h à 18h</span>
+                <span>Lundi - Samedi : 8h à 18h</span>
               </div>
               <div className="contact-socials">
                 <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
