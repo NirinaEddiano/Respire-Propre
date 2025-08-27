@@ -26,7 +26,7 @@ function Contact() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('https://respire-back.onrender.com', formData);
+      const response = await axios.post('https://respire-back.onrender.com/api/send-email', formData);
       toast.success(response.data.message || 'Votre message a été envoyé avec succès !');
       setFormData({
         firstName: '', lastName: '', email: '', phone: '', address: '', message: '',
