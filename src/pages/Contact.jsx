@@ -69,10 +69,6 @@ function Contact() {
                 <i className="fas fa-clock"></i>
                 <span>Lundi - Samedi : 8h à 18h</span>
               </div>
-              <div className="contact-socials">
-                <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-              </div>
             </div>
 
             {/* Colonne du formulaire */}
