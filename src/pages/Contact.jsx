@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -26,7 +25,11 @@ function Contact() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('https://respire-back.onrender.com/api/send-email', formData);
+      const response = await axios.post('https://respire-back.onrender.com/api/send-email', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
       toast.success(response.data.message || 'Votre message a été envoyé avec succès !');
       setFormData({
         firstName: '', lastName: '', email: '', phone: '', address: '', message: '',
@@ -41,7 +44,7 @@ function Contact() {
   return (
     <>
       <main className="contact-page">
-      <header className="contact-header" style={{ backgroundImage: `url(${contactHero})` }}>
+        <header className="contact-header" style={{ backgroundImage: `url(${contactHero})` }}>
           <h1>Contactez-nous</h1>
           <p>Une question ? Un devis ? Remplissez le formulaire ci-dessous ou contactez-nous directement.</p>
         </header>
