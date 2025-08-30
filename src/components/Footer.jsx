@@ -38,7 +38,7 @@ function Footer() {
           <ul>
             <li>
               <i className="fas fa-map-marker-alt"></i>
-              <span>Interventions sur toute la France</span>
+              <span>Interventions sur toute Québec</span>
             </li>
             <li>
               <i className="fas fa-phone"></i>
