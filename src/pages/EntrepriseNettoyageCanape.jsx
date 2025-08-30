@@ -241,7 +241,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé 2 places</h3>
             <div className="price">
-              <span>125</span>$
+              <span>80</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -254,7 +254,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé 3 places</h3>
             <div className="price">
-              <span>150</span>$
+              <span>100</span>$
             </div>
             <Link to="/contact" className="btn btn-secondary">
               Demander un devis
@@ -268,7 +268,7 @@ function EntrepriseNettoyageCanape() {
             </div>
             <h3>Canapé d'angle</h3>
             <div className="price">
-              <span>100</span>$
+              <span>125</span>$
             </div>
             <Link to="/contact" className="btn btn-primary">
               Prendre rendez-vous
