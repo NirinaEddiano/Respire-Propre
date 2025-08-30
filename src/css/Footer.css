@@ -42,6 +42,7 @@
 .footer-about .footer-logo {
   max-width: 160px;
   margin-bottom: 1rem;
+  border-radius: 90PX;
 }
 
 .footer-description {
