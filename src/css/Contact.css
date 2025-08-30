@@ -3,6 +3,7 @@
   font-family: 'Inter', sans-serif;
 }
 .contact-header {
+  margin-top:80px;
   height: 40vh; 
   position: relative;
   display: flex;
