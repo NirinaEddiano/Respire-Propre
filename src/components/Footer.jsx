@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'; // Assurez-vous que le chemin vers votre logo est correct
+import logo from '../assets/LOGO.jpg'; // Assurez-vous que le chemin vers votre logo est correct
 import '../css/Footer.css';
 
 function Footer() {
