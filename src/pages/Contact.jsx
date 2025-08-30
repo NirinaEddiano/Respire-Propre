@@ -93,7 +93,7 @@ function Contact() {
                 <div className="form-row reservation-group">
                   {/* Champ Date */}
                   <div className="input-group">
-                    <label htmlFor="reservationDate">Date de réservation (facultatif)</label>
+                    <label htmlFor="reservationDate">Date de réservation</label>
                     <input
                       id="reservationDate"
                       type="date"
