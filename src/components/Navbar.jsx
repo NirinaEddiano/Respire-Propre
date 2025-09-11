@@ -37,7 +37,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo-link">
-          <img src={logo} alt="Respire Propre Logo" className="logo" />
+          <img src={logo} alt="Saison + Logo" className="logo" />
         </NavLink>
 
         {/* Le menu qui s'affiche en overlay sur mobile */}
