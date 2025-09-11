@@ -37,7 +37,7 @@ function EntrepriseNettoyageCanape() {
     },
     'cuir': {
       title: 'Nettoyage de canapé en Cuir',
-      description: 'Le cuir est un matériau noble qui nécessite une attention particulière. Chez Respire Propre, nous comprenons les besoins spécifiques du cuir. Nos techniques de nettoyage biologiques sont conçues pour éliminer les saletés et les taches tout en préservant la souplesse et l\'éclat naturel du cuir. Nous utilisons des produits doux qui nourrissent le cuir, évitant ainsi le dessèchement et les craquelures, pour que votre canapé en cuir conserve toute sa beauté et sa durabilité.',
+      description: 'Le cuir est un matériau noble qui nécessite une attention particulière. Chez Saison + , nous comprenons les besoins spécifiques du cuir. Nos techniques de nettoyage biologiques sont conçues pour éliminer les saletés et les taches tout en préservant la souplesse et l\'éclat naturel du cuir. Nous utilisons des produits doux qui nourrissent le cuir, évitant ainsi le dessèchement et les craquelures, pour que votre canapé en cuir conserve toute sa beauté et sa durabilité.',
       image: imageCuir
     }
   };
@@ -71,7 +71,7 @@ function EntrepriseNettoyageCanape() {
       name: 'Emma Rousseau',
       location: 'Québec',
       rating: 5,
-      text: "Le tapis de mon salon avait subi les assauts de mes enfants... Respire Propre l'a transformé ! Les couleurs sont ravivées et il est tout doux. Service client au top."
+      text: "Le tapis de mon salon avait subi les assauts de mes enfants... Saison +  l'a transformé ! Les couleurs sont ravivées et il est tout doux. Service client au top."
     },
     {
       name: 'Adrien Bernard',
@@ -132,7 +132,7 @@ function EntrepriseNettoyageCanape() {
         </div>
         <div className="hero-content">
           <p>
-          Pour les particuliers et les professionnels, Respire Propre redonne vie à vos textiles d'ameublement. Confiez-nous votre canapé, fauteuil ou sofa pour un nettoyage biologique qui purifie les fibres en profondeur. En tant qu'experts du nettoyage à domicile en Québec, nous assainissons vos meubles pour un intérieur où il fait bon respirer.
+          Pour les particuliers et les professionnels, Saison +  redonne vie à vos textiles d'ameublement. Confiez-nous votre canapé, fauteuil ou sofa pour un nettoyage biologique qui purifie les fibres en profondeur. En tant qu'experts du nettoyage à domicile en Québec, nous assainissons vos meubles pour un intérieur où il fait bon respirer.
           </p>
           <div className="rating-section">
             <div className="google-stars">
@@ -162,7 +162,7 @@ function EntrepriseNettoyageCanape() {
       <section className="expert-section">
         <h2>Expert en nettoyage de tapis, canapé et matelas</h2>
         <p className="expert-description">
-        Depuis toujours, Respire Propre redonne un nouveau souffle à vos meubles rembourrés. Nos photos avant et après témoignent de notre savoir-faire unique. Nous intervenons directement chez vous pour un nettoyage en profondeur avec des procédés exclusivement biologiques, garantissant un environnement sain, sans aucun produit chimique.
+        Depuis toujours, Saison +  redonne un nouveau souffle à vos meubles rembourrés. Nos photos avant et après témoignent de notre savoir-faire unique. Nous intervenons directement chez vous pour un nettoyage en profondeur avec des procédés exclusivement biologiques, garantissant un environnement sain, sans aucun produit chimique.
         </p>
         <div className="expert-containers">
           <div className="expert-container">
@@ -212,7 +212,7 @@ function EntrepriseNettoyageCanape() {
           </div>
           <div className="service-description">
             <p>
-            Avec Respire Propre, offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
+            Avec Saison + , offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
             </p>
             <ul>
               <li>Nettoyage Professionnel des Tissus d’Ameublement</li>
