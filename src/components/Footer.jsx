@@ -13,10 +13,10 @@ function Footer() {
         {/* Partie 1: À propos */}
         <div className="footer-about">
           <Link to="/" className="footer-logo-link">
-            <img src={logo} alt="Respire Propre Logo" className="footer-logo" />
+            <img src={logo} alt="Saison +  Logo" className="footer-logo" />
           </Link>
           <p className="footer-description">
-            Respire Propre redonne vie à vos textiles d'ameublement grâce à un nettoyage biologique qui purifie les fibres en profondeur, pour un intérieur où il fait bon respirer.
+            Saison + redonne vie à vos textiles d'ameublement grâce à un nettoyage biologique qui purifie les fibres en profondeur, pour un intérieur où il fait bon respirer.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Respire Propre. Tous droits réservés.</p>
+        <p>&copy; {new Date().getFullYear()} Saison + . Tous droits réservés.</p>
       </div>
     </footer>
   );
