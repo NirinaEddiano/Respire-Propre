@@ -12,6 +12,8 @@
   right: 0;
   z-index: 1000;
   transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease;
+  display: flex; /* Pour centrer verticalement le contenu */
+  align-items: center;
 }
 .navbar.scrolled {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
@@ -23,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .navbar-logo-link img {
   height: 60px;
@@ -75,6 +78,12 @@
   color: #1e90ff;
 }
 
+.navbar-desktop-buttons {
+  display: flex; /* Visible sur desktop */
+  align-items: center;
+  gap: 1.5rem; /* Espace entre les boutons */
+}
+
 /* Bouton Contact spécifique */
 .navbar-link.contact-button {
   background-color: #1e90ff;
@@ -85,6 +94,7 @@
   align-items: center;
   gap: 0.5rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
 }
 .navbar-link.contact-button:hover {
   color: #ffffff;
@@ -94,11 +104,35 @@
 .navbar-link.contact-button::after {
   display: none; /* Pas de soulignement pour le bouton */
 }
+
+.navbar-phone-button {
+  background-color: transparent;
+  color: #213547;
+  border: 1px solid #213547;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem; /* Alignez la taille de police */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar-phone-button:hover {
+  background-color: #213547;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
 /* Le bouton Burger (caché par défaut sur grand écran) */
 .navbar-burger {
   display: none;
 }
 
+.navbar-mobile-buttons {
+  display: none;
+}
 
 @media (max-width: 854px) {
   .navbar-logo-link img {
