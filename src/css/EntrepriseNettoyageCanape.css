@@ -7,10 +7,6 @@
 }
 
 .hero-section {
-  background-image: url('/quebec-desktop.jpg'); /* Image pour desktop */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   color: #ffffff; /* Pour que le texte de la section reste lisible */
   padding: 4rem 2rem; /* Ajustez selon le besoin pour le contenu */
   position: relative;
@@ -21,17 +17,6 @@
   margin: 0 auto;
   padding: 2rem;
   gap: 4rem;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Noir transparent (ajustez le 0.4 pour l'intensité) */
-  z-index: 1; /* Placez la surcouche au-dessus de l'image de fond mais sous le contenu */
 }
 
 .hero-image {
