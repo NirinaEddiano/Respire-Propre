@@ -124,7 +124,7 @@ function EntrepriseNettoyageCanape() {
   return (
     <div className="entreprise-page">
       <div className="Title">
-        <h1>Entreprise de nettoyage canapé</h1>
+        <h1>Entreprise de nettoyage canapé à Québec</h1>
         </div>
       <section className="hero-section">
         <div className="hero-image">
@@ -159,76 +159,7 @@ function EntrepriseNettoyageCanape() {
         </div>
       </section>
 
-      <section className="expert-section">
-        <h2>Expert en nettoyage de tapis, canapé et matelas</h2>
-        <p className="expert-description">
-        Depuis toujours, Saison +  redonne un nouveau souffle à vos meubles rembourrés. Nos photos avant et après témoignent de notre savoir-faire unique. Nous intervenons directement chez vous pour un nettoyage en profondeur avec des procédés exclusivement biologiques, garantissant un environnement sain, sans aucun produit chimique.
-        </p>
-        <div className="expert-containers">
-          <div className="expert-container">
-            <img src={canapeImage} alt="Nettoyage de canapés" className="expert-image" />
-            <div className="expert-content">
-              <h3>Nettoyage de Canapés</h3>
-              <p>
-                Nous nettoyons votre canapé ou fauteuil rapidement et en toute sécurité sur place. Nous utilisons uniquement des produits de nettoyage biologiques pour préserver la qualité de vos meubles.
-              </p>
-            </div>
-          </div>
-          <div className="expert-container">
-            <img src={tapisImage} alt="Nettoyage de tapis" className="expert-image" />
-            <div className="expert-content">
-              <h3>Nettoyage de Tapis</h3>
-              <p>
-                Nous nettoyons votre tapis rapidement et en toute sécurité sur place. Nos produits biologiques garantissent un résultat impeccable tout en préservant les fibres.
-              </p>
-            </div>
-          </div>
-          <div className="expert-container">
-            <img src={fauteuilImage} alt="Nettoyage de fauteuils" className="expert-image" />
-            <div className="expert-content">
-              <h3>Nettoyage de Fauteuils</h3>
-              <p>
-                Vos fauteuils retrouvent leur éclat grâce à notre nettoyage biologique sur place, sans produits chimiques, pour un confort durable.
-              </p>
-            </div>
-          </div>
-          <div className="expert-container">
-            <img src={matelasImage} alt="Nettoyage de matelas" className="expert-image" />
-            <div className="expert-content">
-              <h3>Nettoyage de Matelas</h3>
-              <p>
-                Nous assurons un nettoyage approfondi de vos matelas à domicile avec des produits biologiques, pour un sommeil sain et confortable.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section className="professional-service-section">
-        <h2>Un service professionnel de nettoyage</h2>
-        <div className="professional-service-content">
-          <div className="video-container">
-            <video src="/assets/cleaning-video.mp4" controls muted loop className="service-video"></video>
-          </div>
-          <div className="service-description">
-            <p>
-            Avec Saison + , offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
-            </p>
-            <ul>
-              <li>Nettoyage Professionnel des Tissus d’Ameublement</li>
-              <li>Des Prix Abordables Sans Frais Cachés</li>
-              <li>Interventions Rapides</li>
-              <li>Produits de Nettoyage Biologiques et Sûrs</li>
-              <li>Désinfection & Imprégnation</li>
-              <li>Élimination des Poils d’Animaux</li>
-              <li>Machines de Nettoyage à la Pointe de la Technologie</li>
-              <li>Conseils Gratuits et Détaillés</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="pricing-section">
+       <section className="pricing-section">
         <h2>Des tarifs clairs pour chaque besoin</h2>
         <p className="pricing-subtitle">
           Choisissez la prestation qui vous convient. Nos prix sont transparents et adaptés à la taille de vos meubles.
@@ -329,6 +260,77 @@ function EntrepriseNettoyageCanape() {
 
         </div>
       </section>
+
+      <section className="expert-section">
+        <h2>Expert en nettoyage de tapis, canapé et matelas</h2>
+        <p className="expert-description">
+        Depuis toujours, Saison +  redonne un nouveau souffle à vos meubles rembourrés. Nos photos avant et après témoignent de notre savoir-faire unique. Nous intervenons directement chez vous pour un nettoyage en profondeur avec des procédés exclusivement biologiques, garantissant un environnement sain, sans aucun produit chimique.
+        </p>
+        <div className="expert-containers">
+          <div className="expert-container">
+            <img src={canapeImage} alt="Nettoyage de canapés" className="expert-image" />
+            <div className="expert-content">
+              <h3>Nettoyage de Canapés</h3>
+              <p>
+                Nous nettoyons votre canapé ou fauteuil rapidement et en toute sécurité sur place. Nous utilisons uniquement des produits de nettoyage biologiques pour préserver la qualité de vos meubles.
+              </p>
+            </div>
+          </div>
+          <div className="expert-container">
+            <img src={tapisImage} alt="Nettoyage de tapis" className="expert-image" />
+            <div className="expert-content">
+              <h3>Nettoyage de Tapis</h3>
+              <p>
+                Nous nettoyons votre tapis rapidement et en toute sécurité sur place. Nos produits biologiques garantissent un résultat impeccable tout en préservant les fibres.
+              </p>
+            </div>
+          </div>
+          <div className="expert-container">
+            <img src={fauteuilImage} alt="Nettoyage de fauteuils" className="expert-image" />
+            <div className="expert-content">
+              <h3>Nettoyage de Fauteuils</h3>
+              <p>
+                Vos fauteuils retrouvent leur éclat grâce à notre nettoyage biologique sur place, sans produits chimiques, pour un confort durable.
+              </p>
+            </div>
+          </div>
+          <div className="expert-container">
+            <img src={matelasImage} alt="Nettoyage de matelas" className="expert-image" />
+            <div className="expert-content">
+              <h3>Nettoyage de Matelas</h3>
+              <p>
+                Nous assurons un nettoyage approfondi de vos matelas à domicile avec des produits biologiques, pour un sommeil sain et confortable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="professional-service-section">
+        <h2>Un service professionnel de nettoyage</h2>
+        <div className="professional-service-content">
+          <div className="video-container">
+            <video src="/assets/cleaning-video.mp4" controls muted loop className="service-video"></video>
+          </div>
+          <div className="service-description">
+            <p>
+            Avec Saison + , offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
+            </p>
+            <ul>
+              <li>Nettoyage Professionnel des Tissus d’Ameublement</li>
+              <li>Des Prix Abordables Sans Frais Cachés</li>
+              <li>Interventions Rapides</li>
+              <li>Produits de Nettoyage Biologiques et Sûrs</li>
+              <li>Désinfection & Imprégnation</li>
+              <li>Élimination des Poils d’Animaux</li>
+              <li>Machines de Nettoyage à la Pointe de la Technologie</li>
+              <li>Conseils Gratuits et Détaillés</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+     
        
       <section className="feature-section">
         <div className="feature-container">
