@@ -158,6 +158,12 @@ function EntrepriseNettoyageCanape() {
           <p>
           Pour les particuliers et les professionnels, Saison +  redonne vie à vos textiles d'ameublement. Confiez-nous votre canapé, fauteuil ou sofa pour un nettoyage biologique qui purifie les fibres en profondeur. En tant qu'experts du nettoyage à domicile en Québec, nous assainissons vos meubles pour un intérieur où il fait bon respirer.
           </p>
+          <div className="hero-buttons">
+            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>Demander un devis</Link>
+            <a href="tel:+15815806439" className="btn phone-btn">
+              <i className="fas fa-phone"></i>  581-580-6439
+            </a>
+          </div>
           <div className="rating-section">
             <div className="google-stars">
               <i className="fas fa-star"></i>
@@ -174,12 +180,7 @@ function EntrepriseNettoyageCanape() {
             </p>
             </div>
           </div>
-          <div className="hero-buttons">
-            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>Demander un devis</Link>
-            <a href="tel:+15815806439" className="btn phone-btn">
-              <i className="fas fa-phone"></i>  581-580-6439
-            </a>
-          </div>
+          
         </div>
       </section>
          </header>
