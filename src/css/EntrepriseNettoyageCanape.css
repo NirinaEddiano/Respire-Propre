@@ -3,7 +3,6 @@
 .entreprise-page {
   background-color: #ffffff;
   font-family: 'Inter', sans-serif;
-  padding-top: 80px; 
 }
 
 .hero-wrapper {
@@ -72,6 +71,7 @@
 
 .Title h1 {
   font-size: 2.9rem;
+  text-align: center;
   color: #ffffff; /* Ou une couleur claire qui va bien */
   margin-top: 20px;
 }
