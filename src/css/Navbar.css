@@ -208,12 +208,18 @@
   .navbar {
     height: 60px; /* Hauteur de la navbar pour mobile */
   }
+
+  .navbar-mobile-buttons {
+    display: flex; /* Affiche les boutons côte à côte */
+    gap: 0.5rem; /* Espace entre les deux boutons */
+  }
+  
+  
   .navbar-container {
-    padding: 1rem 1.5rem;
-    position: relative; /* Pour positionner les boutons mobiles si besoin */
-    display: grid; /* Utiliser grid pour un meilleur contrôle */
-    grid-template-columns: auto 1fr auto; /* Logo | Boutons mobiles | Burger */
-    gap: 1rem;
+     padding: 1rem 1.5rem;
+    display: flex; /* Utiliser flex au lieu de grid */
+    justify-content: space-between; /* Aligner le logo à gauche et le groupe de droite à droite */
+    align-items: center;
   }
 
   .navbar-logo-link {
@@ -223,6 +229,11 @@
     height: 40px;
   }
 
+  .navbar-mobile-right {
+    display: flex; /* Afficher le conteneur */
+    align-items: center; /* Aligner verticalement les boutons et le burger */
+    gap: 0.8rem; /* Espace entre le groupe de boutons et le burger */
+  }
 
   .navbar-menu-overlay {
     position: fixed;
@@ -249,10 +260,9 @@
   }
 
   /* Les liens à l'intérieur de l'overlay */
-  .navbar-menu {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
+ .navbar-menu, 
+  .navbar-desktop-buttons {
+    display: none;
   }
   .navbar-menu li {
     margin-left: 0;
@@ -292,6 +302,21 @@
     transform-origin: 1px;
   }
 
+   .navbar-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .navbar-menu-overlay .navbar-menu {
+    display: flex; /* Ré-afficher le menu à l'intérieur de l'overlay */
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .navbar-menu-overlay .navbar-link {
+    font-size: 1.5rem;
+  }
+
   /* --- Animation du Burger en croix --- */
   .navbar.menu-open .burger-line:nth-child(1) {
     transform: rotate(45deg);
@@ -305,6 +330,10 @@
   }
 }
 
+.navbar-mobile-right {
+  display: none; /* Caché par défaut sur grand écran */
+}
+
 
 @media (max-width: 360px) {
   .navbar-container {
@@ -312,5 +341,14 @@
   }
   .navbar-logo-link img {
     height: 25px;
+  }
+    .btn-mobile-phone span {
+    display: none;
+  }
+  .btn-mobile-phone {
+    padding: 0.4rem 0.5rem; /* Ajuster le padding pour l'icône seule */
+  }
+  .btn-mobile-devis {
+    font-size: 0.65rem;
   }
 }
