@@ -48,7 +48,6 @@
 }
 
 
-
 .hero-image {
   flex: 1; 
 }
@@ -74,10 +73,6 @@
 .Title h1 {
   font-size: 2.9rem;
   color: #ffffff; /* Ou une couleur claire qui va bien */
-  position: absolute; /* Assurez-vous qu'il est positionné */
-  width: 100%;
-  left:0;
-  padding-left: 500px;
   margin-top: 20px;
 }
 
