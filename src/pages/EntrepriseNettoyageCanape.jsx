@@ -174,7 +174,7 @@ function EntrepriseNettoyageCanape() {
             </div>
           </div>
           <div className="hero-buttons">
-            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>>Demander un devis</Link>
+            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>Demander un devis</Link>
             <a href="tel:+15815806439" className="btn phone-btn">
               <i className="fas fa-phone"></i>  581-580-6439
             </a>
