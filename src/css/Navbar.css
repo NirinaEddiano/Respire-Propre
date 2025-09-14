@@ -130,6 +130,10 @@
   display: none;
 }
 
+.navbar-mobile-right {
+  display: none; /* Caché par défaut sur grand écran */
+}
+
 .navbar-mobile-buttons {
   display: none;
 }
@@ -140,10 +144,6 @@
   }
   .navbar-container {
     padding: 0.8rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
   }
   .navbar-logo-link img {
     height: 35px;
@@ -167,9 +167,7 @@
     gap: 0.8rem; /* Espace entre les deux boutons */
   }
 
-  .navbar-desktop-buttons {
-    gap: 1rem; /* Réduire l'espace */
-  }
+  
   .navbar-link.contact-button,
   .navbar-phone-button {
     padding: 0.5rem 1rem; /* Réduire le padding des boutons */
@@ -354,9 +352,7 @@
   }
 }
 
-.navbar-mobile-right {
-  display: none; /* Caché par défaut sur grand écran */
-}
+
 
 
 @media (max-width: 360px) {
@@ -366,13 +362,5 @@
   .navbar-logo-link img {
     height: 25px;
   }
-    .btn-mobile-phone span {
-    display: none;
-  }
-  .btn-mobile-phone {
-    padding: 0.4rem 0.5rem; /* Ajuster le padding pour l'icône seule */
-  }
-  .btn-mobile-devis {
-    font-size: 0.65rem;
-  }
+    
 }
