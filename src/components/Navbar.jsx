@@ -42,10 +42,10 @@ function Navbar() {
 
 <div className="navbar-mobile-right">
         <div className="navbar-mobile-buttons">
-          <Link to="/contact" className="btn btn-mobile-devis">
+          <Link to="/contact" className="navbar-link contact-button">
             <i className="fas fa-envelope"></i> Devis Gratuit
           </Link>
-          <a href="tel:+15815806439" className="btn btn-mobile-phone">
+          <a href="tel:+15815806439" className="btn navbar-phone-button">
             <i className="fas fa-phone"></i> 581-580-6439
           </a>
         </div>
