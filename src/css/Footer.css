@@ -127,10 +127,30 @@
   font-size: 0.85rem;
 }
 
+.footer-map {
+  margin-top: 3rem;
+  /* La carte prendra toute la largeur disponible du conteneur */
+}
+.footer-map iframe {
+  display: block; /* Évite les espaces indésirables sous l'iframe */
+  width: 100%;
+}
 
 @media (max-width: 768px) {
     .footer-about{
       place-items: center;
+    }
+
+     .site-footer {
+        padding: 3rem 1rem 0;
+    }
+    .footer-about {
+      display: grid;
+      place-items: center; /* Centre le logo et le texte */
+      text-align: center;
+    }
+    .footer-map iframe {
+      height: 250px; /* Réduire la hauteur de la carte sur mobile */
     }
 
 }
