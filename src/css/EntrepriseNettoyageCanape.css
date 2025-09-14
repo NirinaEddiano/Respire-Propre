@@ -45,7 +45,6 @@
   margin: 0 auto;
   gap: 4rem;
    z-index: 0;
-  margin-top:20px;
 }
 
 
@@ -86,7 +85,7 @@
   font-size: 1rem;
   color: #f0f0f0;
   line-height: 1.6;
-  margin-top: 65px;
+  margin-top: 50px;
   margin-bottom: 1.1rem;
 }
 
