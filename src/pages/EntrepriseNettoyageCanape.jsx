@@ -9,13 +9,35 @@ import matelasImage from '../assets/matelas-cleaning.jpg';
 import imagePasCher from '../assets/image-canape-economique.jpg';
 import imageTissu from '../assets/image-canape-tissu.jpg';
 import imageCuir from '../assets/image-canape-cuir.jpg';
+import heroBgDesktop from '../assets/quebec-desktop.jpg'; // Assurez-vous d'avoir ces fichiers
+import heroBgTablet from '../assets/quebec-desktop.jpg';
+import heroBgMobile from '../assets/quebec-desktop.jpg';
 
 function EntrepriseNettoyageCanape() {
   const [activeTab, setActiveTab] = useState('pas-cher');
   const [currentIndex, setCurrentIndex] = useState(0);
   const avatarColors = ['#1e90ff', '#213547', '#f4c150', '#50c878', '#ff7f50', '#6a5acd'];
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  const [navbarHeight, setNavbarHeight] = useState(0); // Pour le décalage de la section hero
 
+   useEffect(() => {
+    // Mesure la hauteur de la navbar après le rendu
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+      setNavbarHeight(navbar.offsetHeight);
+    }
+
+    // Écoute les changements de taille pour ajuster la hauteur
+    const handleResize = () => {
+      if (navbar) {
+        setNavbarHeight(navbar.offsetHeight);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   const getInitials = (name) => {
     const names = name.split(' ');
     if (names.length > 1) {
@@ -122,11 +144,14 @@ function EntrepriseNettoyageCanape() {
   
 
   return (
-    <div className="entreprise-page">
+    <div className="entreprise-page"  style={{ '--navbar-height': `${navbarHeight}px` }}>
       <div className="Title">
         <h1>Entreprise de nettoyage canapé à Québec</h1>
         </div>
-      <section className="hero-section">
+      <section className="hero-section"  style={{
+          backgroundImage: `var(--hero-bg-desktop)`, // Variables CSS pour l'image de fond
+          paddingTop: `${navbarHeight + 64}px` // Décalage pour démarrer sous la navbar + padding
+        }}>
         <div className="hero-image">
           <img src={heroImage} alt="Nettoyage canapé" />
         </div>
