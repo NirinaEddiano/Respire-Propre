@@ -40,6 +40,7 @@ function Navbar() {
           <img src={logo} alt="Saison + Logo" className="logo" />
         </NavLink>
 
+<div className="navbar-mobile-right">
         <div className="navbar-mobile-buttons">
           <Link to="/contact" className="btn btn-mobile-devis">
             <i className="fas fa-envelope"></i> Devis Gratuit
@@ -49,6 +50,13 @@ function Navbar() {
           </a>
         </div>
         
+        <button className="navbar-burger" onClick={toggleMenu} aria-label="Ouvrir le menu">
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+          <span className="burger-line"></span>
+        </button>
+    </div>
+
         {/* Le menu qui s'affiche en overlay sur mobile */}
         <div className={`navbar-menu-overlay ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-menu">
@@ -70,12 +78,7 @@ function Navbar() {
           </ul>
         </div>
         
-        {/* Le bouton Burger (visible uniquement sur mobile) */}
-        <button className="navbar-burger" onClick={toggleMenu} aria-label="Ouvrir le menu">
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-          <span className="burger-line"></span>
-        </button>
+
 
     <div className="navbar-desktop-buttons">
           <Link to="/contact" className="navbar-link contact-button">
