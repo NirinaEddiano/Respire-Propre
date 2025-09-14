@@ -6,13 +6,38 @@
   padding-top: 80px; 
 }
 
-.hero-section {
+.hero-wrapper {
+  position: relative; /* Indispensable pour l'overlay */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  color: #ffffff; /* Pour que le texte de la section reste lisible */
-  padding: 4rem 2rem; /* Ajustez selon le besoin pour le contenu */
+  color: #ffffff; /* Le texte à l'intérieur sera blanc par défaut */
+  padding: 140px 2rem 4rem 2rem; /* Espace en haut (pour la navbar) et en bas */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* L'overlay pour assombrir l'image de fond */
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(33, 53, 71, 0.6); /* Fond semi-transparent. Ajustez l'opacité (0.6) si besoin */
+  z-index: 1; /* Se place entre le fond et le contenu */
+}
+
+.hero-wrapper .Title,
+.hero-wrapper .hero-section {
   position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+
+.hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,9 +50,7 @@
 
 
 .hero-image {
-  flex: 1;
-  position: relative; /* Important pour que l'image soit au-dessus de la surcouche */
-  z-index: 2; 
+  flex: 1; 
 }
 
 .hero-image img {
@@ -50,7 +73,7 @@
 
 .Title h1 {
   font-size: 2.9rem;
-  color: #1e90ff; /* Ou une couleur claire qui va bien */
+  color: #ffffff; /* Ou une couleur claire qui va bien */
   position: absolute; /* Assurez-vous qu'il est positionné */
   width: 100%;
   left:0;
@@ -60,7 +83,7 @@
 
 .hero-content p {
   font-size: 1rem;
-  color: #213547;
+  color: #f0f0f0;
   line-height: 1.6;
   margin-top: 65px;
   margin-bottom: 1.1rem;
@@ -75,6 +98,7 @@
 .rating-info{
   display: flex;
   gap: 20px;
+  color: #ffffff;
 }
 
 .google-stars {
@@ -92,13 +116,13 @@
 
 .rating-text {
   font-size: 1rem;
-  color: #213547;
+  color: #ffffff;
   margin: 0.5rem 0;
 }
 
 .trustindex {
   font-size: 0.9rem;
-  color: #213547;
+  color: #ffffff;
 }
 
 .trustindex a {
@@ -834,6 +858,9 @@
 /* --- RESPONSIVE : Tablettes (max-width: 992px) --- */
 /* ============================================= */
 @media (max-width: 992px) {
+  .hero-wrapper {
+    padding-top: 120px; /* Réduire le padding pour les tablettes */
+  }
   /* --- Section Hero --- */
   .hero-section {
     flex-direction: column;
@@ -909,6 +936,9 @@
 /* --- RESPONSIVE : Mobiles (max-width: 768px) --- */
 /* ============================================= */
 @media (max-width: 768px) {
+  .hero-wrapper {
+    padding: 100px 1rem 3rem 1rem; /* Padding pour mobile */
+  }
 
   .entreprise-page {
     padding-top: 80px;
