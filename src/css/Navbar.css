@@ -353,7 +353,27 @@
 }
 
 
+/* ======================================================= */
+/* --- 4. AJUSTEMENTS POUR PETITS MOBILES (<= 480px) --- */
+/* ======================================================= */
+@media (max-width: 480px) {
+  /* Cacher le texte des boutons pour ne garder que les icônes */
+  .navbar-mobile-buttons .button-text {
+    display: none;
+  }
 
+  /* Ajuster la taille des boutons (maintenant des icônes) pour qu'ils soient plus carrés */
+  .navbar-link.contact-button,
+  .navbar-phone-button {
+    padding: 0.6rem; /* Padding égal pour un rendu carré et cliquable */
+    gap: 0; /* Plus de gap nécessaire car il n'y a plus de texte */
+  }
+
+  /* Optionnel : réduire l'espace entre les deux icônes */
+  .navbar-mobile-buttons {
+    gap: 0.6rem;
+  }
+}
 
 @media (max-width: 360px) {
   .navbar-container {
