@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect  } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/EntrepriseNettoyageCanape.css';
 import heroImage from '../assets/hero-image.jpg';
@@ -18,25 +18,7 @@ function EntrepriseNettoyageCanape() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const avatarColors = ['#1e90ff', '#213547', '#f4c150', '#50c878', '#ff7f50', '#6a5acd'];
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
-  const [navbarHeight, setNavbarHeight] = useState(0); // Pour le décalage de la section hero
-
-   useEffect(() => {
-    // Mesure la hauteur de la navbar après le rendu
-    const navbar = document.querySelector('.navbar');
-    if (navbar) {
-      setNavbarHeight(navbar.offsetHeight);
-    }
-
-    // Écoute les changements de taille pour ajuster la hauteur
-    const handleResize = () => {
-      if (navbar) {
-        setNavbarHeight(navbar.offsetHeight);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const [navbarHeight, setNavbarHeight] = useState(0); // Pour le décalage de la section her
   
   const getInitials = (name) => {
     const names = name.split(' ');
@@ -141,17 +123,33 @@ function EntrepriseNettoyageCanape() {
   const handleFaqClick = (index) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
-  
+
+   const getHeroBackground = () => {
+    if (window.innerWidth <= 768) {
+      return heroBgMobile;
+    }
+    if (window.innerWidth <= 992) {
+      return heroBgTablet;
+    }
+    return heroBgDesktop;
+  };
+
+  const [currentHeroBg, setCurrentHeroBg] = useState(getHeroBackground());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCurrentHeroBg(getHeroBackground());
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
-    <div className="entreprise-page"  style={{ '--navbar-height': `${navbarHeight}px` }}>
+    <div className="entreprise-page">
       <div className="Title">
         <h1>Entreprise de nettoyage canapé à Québec</h1>
         </div>
-      <section className="hero-section"  style={{
-          backgroundImage: `var(--hero-bg-desktop)`, // Variables CSS pour l'image de fond
-          paddingTop: `${navbarHeight + 64}px` // Décalage pour démarrer sous la navbar + padding
-        }}>
+      <section className="hero-section" style={{ backgroundImage: `url(${currentHeroBg})` }}>
         <div className="hero-image">
           <img src={heroImage} alt="Nettoyage canapé" />
         </div>
@@ -176,7 +174,7 @@ function EntrepriseNettoyageCanape() {
             </div>
           </div>
           <div className="hero-buttons">
-            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>Nous contacter</Link>
+            <Link to="/contact" className="btn contact-btn"><i className="fas fa-envelope"></i>>Demander un devis</Link>
             <a href="tel:+15815806439" className="btn phone-btn">
               <i className="fas fa-phone"></i>  581-580-6439
             </a>
