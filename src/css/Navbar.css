@@ -260,7 +260,7 @@
   }
 
   /* Les liens à l'intérieur de l'overlay */
- .navbar-menu, 
+ 
   .navbar-desktop-buttons {
     display: none;
   }
