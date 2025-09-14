@@ -244,21 +244,13 @@
   
   .navbar-container {
      padding: 1rem 1.5rem;
-    display: flex; /* Utiliser flex au lieu de grid */
-    justify-content: space-between; /* Aligner le logo à gauche et le groupe de droite à droite */
-    align-items: center;
   }
 
-  .navbar-logo-link {
-    grid-column: 1; /* Le logo en première colonne */
-  }
   .navbar-logo-link img {
     height: 40px;
   }
 
-  .navbar-mobile-right {
-    display: flex; /* Afficher le conteneur */
-    align-items: center; /* Aligner verticalement les boutons et le burger */
+  .navbar-mobile-right { /* Aligner verticalement les boutons et le burger */
     gap: 0.8rem; /* Espace entre le groupe de boutons et le burger */
   }
 
@@ -343,6 +335,11 @@
   .navbar-menu-overlay .navbar-link {
     font-size: 1.5rem;
   }
+
+    .navbar-mobile-buttons {
+    gap: 0.5rem;
+  }
+
 
   /* --- Animation du Burger en croix --- */
   .navbar.menu-open .burger-line:nth-child(1) {
