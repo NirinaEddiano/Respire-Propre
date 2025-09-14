@@ -149,7 +149,7 @@ function EntrepriseNettoyageCanape() {
       <div className="Title">
         <h1>Entreprise de nettoyage canapé à Québec</h1>
         </div>
-      <section className="hero-section" style={{ backgroundImage: `url(${currentHeroBg})` }}>
+      <section className="hero-section">
         <div className="hero-image">
           <img src={heroImage} alt="Nettoyage canapé" />
         </div>
