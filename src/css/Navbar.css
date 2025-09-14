@@ -135,6 +135,12 @@
 }
 
 @media (max-width: 854px) {
+  .navbar {
+    height: 70px; /* Hauteur de la navbar pour tablette */
+  }
+  .navbar-container {
+    padding: 0.8rem 1.5rem;
+  }
   .navbar-logo-link img {
     height: 30px;
     display: block; 
@@ -146,6 +152,14 @@
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  .navbar-desktop-buttons {
+    gap: 1rem; /* Réduire l'espace */
+  }
+  .navbar-link.contact-button,
+  .navbar-phone-button {
+    padding: 0.5rem 1rem; /* Réduire le padding des boutons */
+    font-size: 0.85rem;
   }
   .navbar-menu li {
     margin-left: 2rem;
@@ -191,10 +205,24 @@
 }
 
 @media (max-width: 768px) {
-
+  .navbar {
+    height: 60px; /* Hauteur de la navbar pour mobile */
+  }
   .navbar-container {
     padding: 1rem 1.5rem;
+    position: relative; /* Pour positionner les boutons mobiles si besoin */
+    display: grid; /* Utiliser grid pour un meilleur contrôle */
+    grid-template-columns: auto 1fr auto; /* Logo | Boutons mobiles | Burger */
+    gap: 1rem;
   }
+
+  .navbar-logo-link {
+    grid-column: 1; /* Le logo en première colonne */
+  }
+  .navbar-logo-link img {
+    height: 40px;
+  }
+
 
   .navbar-menu-overlay {
     position: fixed;
