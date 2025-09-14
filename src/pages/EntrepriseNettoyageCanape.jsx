@@ -146,6 +146,7 @@ function EntrepriseNettoyageCanape() {
 
   return (
     <div className="entreprise-page">
+       <header className="hero-wrapper" style={{ backgroundImage: `url(${currentHeroBg})` }}>
       <div className="Title">
         <h1>Entreprise de nettoyage canapé à Québec</h1>
         </div>
@@ -181,6 +182,7 @@ function EntrepriseNettoyageCanape() {
           </div>
         </div>
       </section>
+         </header>
 
        <section className="pricing-section">
         <h2>Des tarifs clairs pour chaque besoin</h2>
