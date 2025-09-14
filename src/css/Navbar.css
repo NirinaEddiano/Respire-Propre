@@ -140,19 +140,33 @@
   }
   .navbar-container {
     padding: 0.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
   .navbar-logo-link img {
-    height: 30px;
+    height: 35px;
     display: block; 
   }
-  
-  .navbar-menu {
+
+  .navbar-menu,
+  .navbar-desktop-buttons {
+    display: none;
+  }
+
+  .navbar-mobile-right {
     display: flex;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 1rem; /* Espace entre les boutons et le burger */
   }
+
+  /* 4. Afficher les boutons mobiles */
+  .navbar-mobile-buttons {
+    display: flex;
+    gap: 0.8rem; /* Espace entre les deux boutons */
+  }
+
   .navbar-desktop-buttons {
     gap: 1rem; /* Réduire l'espace */
   }
@@ -172,6 +186,19 @@
     position: relative;
     padding-bottom: 0.5rem;
     transition: color 0.3s ease;
+  }
+  .navbar-burger {
+    display: flex; /* Assure-toi qu'il est bien visible */
+    /* ...conservez vos autres styles pour .navbar-burger... */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
   }
 }
 
@@ -260,7 +287,7 @@
   }
 
   /* Les liens à l'intérieur de l'overlay */
- 
+  .navbar-menu,
   .navbar-desktop-buttons {
     display: none;
   }
