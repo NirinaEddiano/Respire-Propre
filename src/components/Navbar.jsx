@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 
 import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation ,Link} from 'react-router-dom';
 import '../css/Navbar.css';
 import logo from '../assets/LOGO.jpg';
 
@@ -40,6 +40,15 @@ function Navbar() {
           <img src={logo} alt="Saison + Logo" className="logo" />
         </NavLink>
 
+        <div className="navbar-mobile-buttons">
+          <Link to="/contact" className="btn btn-mobile-devis">
+            <i className="fas fa-envelope"></i> Devis Gratuit
+          </Link>
+          <a href="tel:+15815806439" className="btn btn-mobile-phone">
+            <i className="fas fa-phone"></i> 581-580-6439
+          </a>
+        </div>
+        
         {/* Le menu qui s'affiche en overlay sur mobile */}
         <div className={`navbar-menu-overlay ${isMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-menu">
@@ -58,11 +67,6 @@ function Navbar() {
                 Astuces Nettoyage
               </NavLink>
             </li>
-                        <li>
-             <Link to="/contact" className="btn btn-mobile-devis">
-            <i className="fas fa-envelope"></i> Devis Gratuit
-          </Link>
-            </li>
           </ul>
         </div>
         
@@ -73,7 +77,14 @@ function Navbar() {
           <span className="burger-line"></span>
         </button>
 
-    
+    <div className="navbar-desktop-buttons">
+          <Link to="/contact" className="navbar-link contact-button">
+            <i className="fas fa-envelope"></i> Devis Gratuit {/* Changé en Devis Gratuit */}
+          </Link>
+          <a href="tel:+15815806439" className="btn navbar-phone-button">
+            <i className="fas fa-phone"></i> 581-580-6439
+          </a>
+        </div>
         
       </div>
     </nav>
