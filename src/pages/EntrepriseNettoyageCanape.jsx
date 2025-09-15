@@ -287,6 +287,31 @@ function EntrepriseNettoyageCanape() {
         </div>
       </section>
 
+      
+      <section className="professional-service-section">
+        <h2>Un service professionnel de nettoyage</h2>
+        <div className="professional-service-content">
+          <div className="video-container">
+            <video src="/assets/cleaning-video.mp4" controls muted loop className="service-video"></video>
+          </div>
+          <div className="service-description">
+            <p>
+            Avec Saison + , offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
+            </p>
+            <ul>
+              <li>Nettoyage Professionnel des Tissus d’Ameublement</li>
+              <li>Des Prix Abordables Sans Frais Cachés</li>
+              <li>Interventions Rapides</li>
+              <li>Produits de Nettoyage Biologiques et Sûrs</li>
+              <li>Désinfection & Imprégnation</li>
+              <li>Élimination des Poils d’Animaux</li>
+              <li>Machines de Nettoyage à la Pointe de la Technologie</li>
+              <li>Conseils Gratuits et Détaillés</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="expert-section">
         <h2>Expert en nettoyage de tapis, canapé et matelas</h2>
         <p className="expert-description">
@@ -332,29 +357,6 @@ function EntrepriseNettoyageCanape() {
         </div>
       </section>
       
-      <section className="professional-service-section">
-        <h2>Un service professionnel de nettoyage</h2>
-        <div className="professional-service-content">
-          <div className="video-container">
-            <video src="/assets/cleaning-video.mp4" controls muted loop className="service-video"></video>
-          </div>
-          <div className="service-description">
-            <p>
-            Avec Saison + , offrez à vos meubles une propreté qui se respire. Notre service professionnel, rapide et écologique purifie vos tissus en profondeur. Faites l'expérience d'une expertise unique pour des résultats éclatants et une sensation de fraîcheur durable.
-            </p>
-            <ul>
-              <li>Nettoyage Professionnel des Tissus d’Ameublement</li>
-              <li>Des Prix Abordables Sans Frais Cachés</li>
-              <li>Interventions Rapides</li>
-              <li>Produits de Nettoyage Biologiques et Sûrs</li>
-              <li>Désinfection & Imprégnation</li>
-              <li>Élimination des Poils d’Animaux</li>
-              <li>Machines de Nettoyage à la Pointe de la Technologie</li>
-              <li>Conseils Gratuits et Détaillés</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
      
        
