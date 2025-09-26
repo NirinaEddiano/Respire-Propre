@@ -32,7 +32,7 @@ function Contact() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('https://respire-back.onrender.com/api/send-email', formData, {
+      const response = await axios.post('https://respire-back.vercel.app/api/send-email', formData, {
         headers: {
           'Content-Type': 'application/json',
         },
